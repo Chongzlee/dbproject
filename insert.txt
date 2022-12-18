@@ -1,17 +1,6 @@
---workList
 
-INSERT INTO WorkList (WorkCode,WorkName)
-VALUES ('WL01','แคชเชียร์');
-INSERT INTO WorkList (WorkCode,WorkName)
-VALUES ('WL02','คิดเงิน');
-INSERT INTO WorkList (WorkCode,WorkName)
-VALUES ('WL03','คิดเงิน');
-INSERT INTO WorkList (WorkCode,WorkName)
-VALUES ('WL04','คิดเงิน');
-INSERT INTO WorkList (WorkCode,WorkName)
-VALUES ('WL05','คิดเงิน');
 
---receiver แก้ Fname,Lname,Address,Phone ตั้งแต่2 ลงไป
+--receiver 
 
 INSERT INTO Receiver (RevCode,Fname,Lname,Address,Phone)
 VALUES ('RV01','Terapat','Chukadorn','92 mainstreet ','0837465368');
@@ -25,8 +14,8 @@ INSERT INTO Receiver (RevCode,Fname,Lname,Address,Phone)
 VALUES ('RV05','Teawat','Korn','96 mainstreet ','0837356778');
 
 
-
 --Department 
+
 INSERT INTO Department (DeptCode,DeptName,MgrStartDate,MgrCode)
 VALUES ('DP01','งานตรวจสอบและควบคุมคุณภาพ','20/11/22','EM01');
 INSERT INTO Department (DeptCode,DeptName,MgrStartDate,MgrCode)
@@ -47,7 +36,7 @@ INSERT INTO Department (DeptCode,DeptName,MgrStartDate,MgrCode)
 VALUES ('DP09','การตลาดและพนักงานขาย','02/10/19','EM20');
 
 
---Customer แก้ Fname,Lname,Address,Phone ตั้งแต่2 ลงไป
+--Customer 
 
 INSERT INTO Customer (CusCode,Fname,Lname,Address,Phone,Sex,CusTypeCode)
 VALUES ('CM01','Kerapoom','Bunreerat','92 mainstreet ','0837465368','M','A01');
@@ -60,7 +49,8 @@ VALUES ('CM04','Jan','Uary','95 mainstreet ','0837464332','F','A02');
 INSERT INTO Customer (CusCode,Fname,Lname,Address,Phone,Sex,CusTypeCode)
 VALUES ('CM05','Kong','Pob','95 mainstreet ','0830732368','M','A01');
 
---EMPLOYEE แก้ Fname,Lname,Address,Salary,Phone ตั้งแต่2 ลงไป ตรง mgr ลง ท้ายคือหัวหน้า Salary เยอะหน่อย
+--EMPLOYEE 
+
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
 VALUES ('EM01','Modtanoi','Hukoijing','92 mainstreet ','60,000','0837465368','M','DP01',''); 
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
@@ -84,19 +74,19 @@ VALUES ('EM010','Boy','London','101 mainstreet ','30,000','087465608','F','DP05'
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
 VALUES ('EM11','Gong','Gang','102 mainstreet ','60,000','0804435368','F','DP05',''); 
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM012','Gang','Hoo','103 mainstreet ','20,000','0836665308','M','DP04','EM09');
+VALUES ('EM12','Gang','Hoo','103 mainstreet ','20,000','0836665308','M','DP04','EM09');
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM013','Parn','Arngthong','104 mainstreet ','30,000','0830065368','F','DP05','EM11');
+VALUES ('EM13','Parn','Arngthong','104 mainstreet ','30,000','0830065368','F','DP05','EM11');
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM014','Narinda','Rukjing','105 mainstreet ','60,000','0833466788','M','DP06',''); 
+VALUES ('EM14','Narinda','Rukjing','105 mainstreet ','60,000','0833466788','M','DP06',''); 
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM015','Maggy','Rose','106 mainstreet ','20,000','0847456768','F','DP06','EM14');
+VALUES ('EM15','Maggy','Rose','106 mainstreet ','20,000','0847456768','F','DP06','EM14');
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM016','Moo','Dang','107 mainstreet ','60,000','0845468968','F','DP07',''); mgr
+VALUES ('EM16','Moo','Dang','107 mainstreet ','60,000','0845468968','F','DP07',''); mgr
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM017','Modpoo','Hoing','110 mainstreet ','20,000','0836765568','F','DP07','EM16');
+VALUES ('EM17','Modpoo','Hoing','110 mainstreet ','20,000','0836765568','F','DP07','EM16');
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
-VALUES ('EM018','Noi','Nidjing','111 mainstreet ','60,000','0837678368','M','DP08',''); 
+VALUES ('EM18','Noi','Nidjing','111 mainstreet ','60,000','0837678368','M','DP08',''); 
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
 VALUES ('EM019','Ohm','Piang','112 mainstreet ','23,000','083900068','M','DP08','EM18');
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
@@ -107,7 +97,9 @@ INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupE
 VALUES ('EM022','Moo','Ping','115 mainstreet ','20,000','0847888788','M','DP05','EM11');
 INSERT INTO Employee (EmpCode,Fname,Lname,Address,Salary,Phone,Sex,DeptCode,SupEmpCode)
 VALUES ('EM023','Mod','Kunfai','116 mainstreet ','22,000','0800466368','M','DP02','EM03');	
- -- parcel แก้ PrcDetail ตั้งแต่2 ลงไป
+
+ -- parcel
+ 
 INSERT INTO Parcel (PrcCode,PrcDetail,SendDate,RevDate,Price,CusCode,RevCode, BillCode)
 VALUES ('PC01','ผลไม้อบแห้ง','13/04/21','15/04/21 ','60','CM01','RV03',2543837365); 
 INSERT INTO Parcel (PrcCOde,PrcDetail,SendDate,RevDate,Price,CusCode,RevCode, BillCode)
@@ -123,8 +115,10 @@ VALUES ('PC06','นาฬิกา','29/12/21','03/01/22 ','30','CM02','RV02',11
 INSERT INTO Parcel (PrcCOde,PrcDetail,SendDate,RevDate,Price,CusCode,RevCode, BillCode)
 VALUES ('PC07','โคมไฟ','29/12/21','03/01/22 ','45','CM02','RV05',1119928736); 
 INSERT INTO Parcel (PrcCOde,PrcDetail,SendDate,RevDate,Price,CusCode,RevCode, BillCode)
-VALUES ('PC08','ซามารอเด็ง','29/12/21','03/01/22 ','30','CM02','RV04',1119928736); 
+VALUES ('PC08','ซามารอเด็ง','29/12/21','03/01/22 ','30','CM02','RV04',1119928736);
+
 --bill
+
 INSERT INTO Bill (BillCode,TotalPrice)
 VALUES (2543837365,60); 
 INSERT INTO Bill (BillCode,TotalPrice)
@@ -137,6 +131,57 @@ INSERT INTO Bill (BillCode,TotalPrice)
 VALUES (2338748565,30); 
 INSERT INTO Bill (BillCode,TotalPrice)
 VALUES (1119928736,105); 
+
+--workList
+
+INSERT INTO WorkList (WorkCode,WorkName)
+VALUES ('WL01','เคาน์เตอร์');
+INSERT INTO WorkList (WorkCode,WorkName)
+VALUES ('WL02','โกดัง');
+INSERT INTO WorkList (WorkCode,WorkName)
+VALUES ('WL03','ขนส่ง');
+
+--workprocess
+
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00001,PC01,WL01,EM10); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00002,PC01,WL02,EM04); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00003,PC01,WL03,EM05); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00004,PC02,WL01,EM11); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00005,PC02,WL02,EM04); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00006,PC02,WL03,EM05); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00007,PC03,WL01,EM13); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00008,PC03,WL02,EM23); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00009,PC04,WL01,EM22); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00010,PC04,WL02,EM08); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00011,PC04,WL03,EM23); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00012,PC05,WL01,EM13); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00012,PC05,WL02,EM03); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00012,PC05,WL03,EM05); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00012,PC05,WL02,EM08); 
+INSERT INTO WorkProcess (Sequence,PrcCode,WorkCode,EmpCode)
+VALUES (00012,PC05,WL03,EM23); 
+
+--custype
+
+INSERT INTO WorkProcess (CusTypeCode,TypeName)
+VALUES ('A01','ลูกค้า'); 
+INSERT INTO WorkProcess (CusTypeCode,TypeName)
+VALUES ('A02','สมาชิก'); 
 
 
 
