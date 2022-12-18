@@ -47,7 +47,7 @@ CREATE TABLE Employee
      Fname VARCHAR(50) NOT NULL,
      Lname VARCHAR(50) NOT NULL,
      Address VARCHAR(60) ,
-     Salary NUMBER(7),
+     Salary VARCHAR(15),
      Phone  NUMBER(15) ,
      Sex VARCHAR(2) CHECK(sex IN('F','M')) ,
      WorkStatus VARCHAR(2) CHECK(WorkStatus IN('W','Q')),
