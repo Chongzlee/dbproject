@@ -119,4 +119,6 @@ CREATE TABLE Location
 
 ALTER TABLE Department
 ADD FOREIGN KEY (MgrCode) REFERENCES Employee(EmpCode);
+ALTER TABLE Department
+ADD FOREIGN KEY (LctCode) REFERENCES Location(LctCode);
 
