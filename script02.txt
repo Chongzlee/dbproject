@@ -13,7 +13,7 @@ CREATE TABLE Customer
      Fname VARCHAR(50) NOT NULL,
      Lname VARCHAR(50) NOT NULL,
      Address VARCHAR(60) ,
-     Phone  NUMBER(15) ,
+     Phone  VARCHAR(15) ,
      Sex VARCHAR(2) CHECK(sex IN('F','M')) ,
      CusTypeCode VARCHAR(5) ,
      CONSTRAINT Customer_CusType FOREIGN KEY (CusTypeCode) REFERENCES CustomerType(CusTypeCode)
@@ -27,7 +27,7 @@ CREATE TABLE Receiver
      Fname VARCHAR(50) NOT NULL,
      Lname VARCHAR(50) NOT NULL,
      Address VARCHAR(60) ,
-     Phone NUMBER(15) 
+     Phone VARCHAR(15) 
 );
 
 --department
@@ -48,7 +48,7 @@ CREATE TABLE Employee
      Lname VARCHAR(50) NOT NULL,
      Address VARCHAR(60) ,
      Salary VARCHAR(15),
-     Phone  NUMBER(15) ,
+     Phone  VARCHAR(15) ,
      Sex VARCHAR(2) CHECK(sex IN('F','M')) ,
      WorkStatus VARCHAR(2) CHECK(WorkStatus IN('W','Q')),
      DeptCode  VARCHAR(5),
@@ -68,7 +68,7 @@ CREATE TABLE WorkList
 CREATE TABLE Bill
 (
      BillCode NUMBER(10) NOT NULL PRIMARY KEY ,
-     TatalPrice Number(10) DEFAULT NULL 
+     TotalPrice Number(10) DEFAULT NULL 
 );
 
 --parcel
@@ -82,6 +82,7 @@ CREATE TABLE Parcel
      CusCode VARCHAR(5),
      RevCode VARCHAR(5),
      BillCode NUMBER(10),
+     PrcStatus VARCHAR(2)  Default 'F',
      FOREIGN KEY(CusCode) REFERENCES Customer(CusCode),
      FOREIGN KEY(RevCode) REFERENCES Receiver(RevCode),
      FOREIGN KEY(BillCode) REFERENCES Bill(BillCode)
@@ -92,15 +93,26 @@ CREATE TABLE Parcel
 
 CREATE TABLE WorkProcess
 (
-     Sequence NUMBER(5) NOT NULL PRIMARY KEY,
+     Sequence VARCHAR(5) NOT NULL PRIMARY KEY,
      PrcCode  VARCHAR(5),
      WorkCode  NUMBER(10),
      EmpCode  VARCHAR(5),
+     WrkStatus VARCHAR(2)  Default 'F',
      FOREIGN KEY(PrcCode) REFERENCES Parcel(PrcCode),
      FOREIGN KEY(WorkCode) REFERENCES WorkList(WorkCode),
      FOREIGN KEY(EmpCode) REFERENCES Employee(EmpCode)
      
 );
+
+--location
+
+
+CREATE TABLE Location 
+(
+     LctCode VARCHAR(5) NOT NULL PRIMARY KEY,
+     LctName VARCHAR(20) NOT NULL,      
+)
+
 
 
 ----alter foreign key to department
