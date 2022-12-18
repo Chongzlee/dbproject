@@ -86,6 +86,21 @@ CREATE TABLE Parcel
      FOREIGN KEY(BillCode) REFERENCES Bill(BillCode)
 );
 
+--workprocess
+
+
+CREATE TABLE WorkProcess
+(
+     Sequence NUMBER(5) NOT NULL PRIMARY KEY,
+     PrcCode  VARCHAR(5),
+     WorkCode  NUMBER(10),
+     EmpCode  VARCHAR(5),
+     FOREIGN KEY(PrcCode) REFERENCES Parcel(PrcCode),
+     FOREIGN KEY(WorkCode) REFERENCES WorkList(WorkCode),
+     FOREIGN KEY(EmpCode) REFERENCES Employee(EmpCode)
+     
+);
+
 
 ----alter foreign key to department
 
