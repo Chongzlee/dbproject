@@ -197,5 +197,163 @@ VALUES ('LC01','97 mainstreet');
 INSERT INTO WorkProcess (LctCode,LctName)
 VALUES ('LC02','85 mainstreet'); 
 
+--Weight
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE01','100');
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE02','250'); 
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE03','500'); 
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE04','1000'); 
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE05','1500'); 
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE06','2000'); 
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE07','2500'); 
+INSERT INTO Weight (WeightCode,Weight)
+VALUES ('WE08','3000'); 
+
+-- Parceltype
+
+INSERT INTO ParcelType (PrcTypeCode, PrcTypeName)
+VALUES ('PT01','ลงทะเบียน'); 
+INSERT INTO ParcelType (PrcTypeCode, PrcTypeName)
+VALUES ('PT02','EMS'); 
+
+-- Cost
+INSERT INTO Cost (CostCode, Price, PrcTypCeode, WeightCode)
+VALUES ('PT01','40','PT02','WE01'); 
+INSERT INTO Cost (CostCode, Price, PrcTypCeode, WeightCode)
+VALUES ('PT02','45','PT02','WE02'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT03','50','PT02','WE03'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT04','20','PT01','WE04'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT05','60','PT02','WE04');
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT06','80','PT02','WE05'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT07','35','PT01','WE06'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT08','100','PT02','WE06'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT09','120','PT02','WE07'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT10','50','PT01','WE08'); 
+INSERT INTO Cost (CostCode, Price, PrcTypeCode, WeightCode)
+VALUES ('PT11','140','PT02','WE08'); 
+
+
+UPDATE  WorkProcess
+SET StartTime = '08:15:35'
+WHERE Sequence = 'WP01';
+UPDATE  WorkProcess
+SET StartTime = '09:03:55'
+WHERE Sequence = 'WP01';
+UPDATE  WorkProcess
+SET StartTime = '07:35:44'
+WHERE Sequence = 'WP01';
+
+
+UPDATE  WorkProcess
+SET EndTime = '18:15:35'
+WHERE Sequence = 'WP01';
+UPDATE  WorkProcess
+SET EndTime = '17:55:05'
+WHERE Sequence = 'WP01';
+UPDATE  WorkProcess
+SET EndTime = '19:01:55'
+WHERE Sequence = 'WP01';
+
+
+
+UPDATE  ParcelList
+SET PrcWeight = '223'
+WHERE Sequence = 'PC01';
+UPDATE  ParcelList
+SET PrcWeight = '915'
+WHERE Sequence = 'PC02';
+UPDATE  ParcelList
+SET PrcWeight = '2013'
+WHERE Sequence = 'PC03';
+UPDATE  ParcelList
+SET PrcWeight = '750'
+WHERE Sequence = 'PC04';
+UPDATE  ParcelList
+SET PrcWeight = '2703'
+WHERE Sequence = 'PC05';
+UPDATE  ParcelList
+SET PrcWeight = '1530'
+WHERE Sequence = 'PC06';
+UPDATE  ParcelList
+SET PrcWeight = '1250'
+WHERE Sequence = 'PC07';
+UPDATE  ParcelList
+SET PrcWeight = '270'
+WHERE Sequence = 'PC08';
+
+UPDATE  ParcelList
+SET PrcType = 'ลงทะเบียน'
+WHERE Sequence = 'PC01';
+UPDATE  ParcelList
+SET PrcType = 'ลงทะเบียน'
+WHERE Sequence = 'PC02';
+UPDATE  ParcelList
+SET PrcType = 'EMS'
+WHERE Sequence = 'PC03';
+UPDATE  ParcelList
+SET PrcType = 'ลงทะเบียน'
+WHERE Sequence = 'PC04';
+UPDATE  ParcelList
+SET PrcType = 'EMS'
+WHERE Sequence = 'PC05';
+UPDATE  ParcelList
+SET PrcType = 'ลงทะเบียน'
+WHERE Sequence = 'PC06';
+UPDATE  ParcelList
+SET PrcType = 'EMS'
+WHERE Sequence = 'PC07';
+UPDATE  ParcelList
+SET PrcType = 'EMS'
+WHERE Sequence = 'PC08';
+
+
+
+UPDATE  ParcelList
+SET CostCode = 'PT04'
+WHERE Sequence = 'PC01';
+UPDATE  ParcelList
+SET CostCode = 'PT04'
+WHERE Sequence = 'PC02';
+UPDATE  ParcelList
+SET CostCode = 'PT08'
+WHERE Sequence = 'PC03';
+UPDATE  ParcelList
+SET CostCode = 'PT04'
+WHERE Sequence = 'PC04';
+UPDATE  ParcelList
+SET CostCode = 'PT09'
+WHERE Sequence = 'PC05';
+UPDATE  ParcelList
+SET CostCode = 'PT07'
+WHERE Sequence = 'PC06';
+UPDATE  ParcelList
+SET CostCode = 'PT06'
+WHERE Sequence = 'PC07';
+UPDATE  ParcelList
+SET CostCode = 'PT02'
+WHERE Sequence = 'PC08';
+
+
+
+
+
+
+
+
+
 
 
