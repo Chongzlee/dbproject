@@ -122,3 +122,55 @@ ADD FOREIGN KEY (MgrCode) REFERENCES Employee(EmpCode);
 ALTER TABLE Department
 ADD FOREIGN KEY (LctCode) REFERENCES Location(LctCode);
 
+
+--weight
+
+CREATE TABLE Weight
+(
+     WeightCode VARCHAR(5) NOT NULL PRIMARY KEY,
+     Weight VARCHAR(20) NOT NULL,      
+)
+
+--parcelType
+
+CREATE TABLE ParcelType
+(
+    PrcTypeode VARCHAR(5) NOT NULL PRIMARY KEY,
+     PrcTypeName VARCHAR(20) NOT NULL,      
+)
+
+--Cost
+
+CREATE TABLE Cost
+(
+     CostCode VARCHAR(5) NOT NULL PRIMARY KEY,
+     Price VARCHAR(20) NOT NULL,
+     PrcTypeCode VARCHAR(5),
+     WeightCode VARCHAR(5),
+     FOREIGN KEY(PrcTypeode) REFERENCES ParcelList(PrcTypeode),
+     FOREIGN KEY(WeightCode) REFERENCES Weight(WeightCode)
+     
+)
+
+--alther workprocess 
+ALTER TABLE WorkProcess
+ADD EndTime VARCHAR2(20) NOT NULL DEFAULT '00:00:00';
+ALTER TABLE WorkProcess
+ADD StartTime VARCHAR2(20) NOT NULL DEFAULT '00:00:00';
+
+--delete
+ALTER TABLE ParcelList
+DROP COLUMN Price;
+ALTER TABLE ParcelList
+DROP COLUMN BillCode;
+
+--alther ParcelList
+ALTER TABLE ParcelList
+ADD PrcWeight VARCHAR(10) ;
+ALTER TABLE ParcelList
+ADD PrcType VARCHAR(10) ;
+ALTER TABLE ParcelList
+ADD CostCode VARCHAR(5) NOT NULL;
+ALTER TABLE ParcelList
+ADD FOREIGN KEY (CostCode) REFERENCES Cost(CostCode);
+
