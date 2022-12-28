@@ -270,82 +270,82 @@ WHERE Sequence = 'WP01';
 
 
 
-UPDATE  ParcelList
+UPDATE  Parcel
 SET PrcWeight = '223'
-WHERE Sequence = 'PC01';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC01';
+UPDATE  Parcel
 SET PrcWeight = '915'
-WHERE Sequence = 'PC02';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC02';
+UPDATE  Parcel
 SET PrcWeight = '2013'
-WHERE Sequence = 'PC03';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC03';
+UPDATE  Parcel
 SET PrcWeight = '750'
-WHERE Sequence = 'PC04';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC04';
+UPDATE  Parcel
 SET PrcWeight = '2703'
-WHERE Sequence = 'PC05';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC05';
+UPDATE  Parcel
 SET PrcWeight = '1530'
-WHERE Sequence = 'PC06';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC06';
+UPDATE  Parcel
 SET PrcWeight = '1250'
-WHERE Sequence = 'PC07';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC07';
+UPDATE  Parcel
 SET PrcWeight = '270'
-WHERE Sequence = 'PC08';
+WHERE PrcCode = 'PC08';
 
-UPDATE  ParcelList
+UPDATE  Parcel
 SET PrcType = 'ลงทะเบียน'
-WHERE Sequence = 'PC01';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC01';
+UPDATE  Parcel
 SET PrcType = 'ลงทะเบียน'
-WHERE Sequence = 'PC02';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC02';
+UPDATE  Parcel
 SET PrcType = 'EMS'
-WHERE Sequence = 'PC03';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC03';
+UPDATE  Parcel
 SET PrcType = 'ลงทะเบียน'
-WHERE Sequence = 'PC04';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC04';
+UPDATE  Parcel
 SET PrcType = 'EMS'
-WHERE Sequence = 'PC05';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC05';
+UPDATE  Parcel
 SET PrcType = 'ลงทะเบียน'
-WHERE Sequence = 'PC06';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC06';
+UPDATE  Parcel
 SET PrcType = 'EMS'
-WHERE Sequence = 'PC07';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC07';
+UPDATE  Parcel
 SET PrcType = 'EMS'
-WHERE Sequence = 'PC08';
+WHERE PrcCode = 'PC08';
 
 
 
-UPDATE  ParcelList
+UPDATE  Parcel
 SET CostCode = 'PT04'
-WHERE Sequence = 'PC01';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC01';
+UPDATE  Parcel
 SET CostCode = 'PT04'
-WHERE Sequence = 'PC02';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC02';
+UPDATE  Parcel
 SET CostCode = 'PT08'
-WHERE Sequence = 'PC03';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC03';
+UPDATE  Parcel
 SET CostCode = 'PT04'
-WHERE Sequence = 'PC04';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC04';
+UPDATE  Parcel
 SET CostCode = 'PT09'
-WHERE Sequence = 'PC05';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC05';
+UPDATE  Parcel
 SET CostCode = 'PT07'
-WHERE Sequence = 'PC06';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC06';
+UPDATE  Parcel
 SET CostCode = 'PT06'
-WHERE Sequence = 'PC07';
-UPDATE  ParcelList
+WHERE PrcCode = 'PC07';
+UPDATE Parcel
 SET CostCode = 'PT02'
-WHERE Sequence = 'PC08';
+WHERE PrcCode = 'PC08';
 
 
 
