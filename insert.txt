@@ -348,12 +348,197 @@ SET CostCode = 'PT02'
 WHERE PrcCode = 'PC08';
 
 
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-02 13:30:03');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-07 15:35:55');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-12 10:34:33');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-17 09:30:22');
+INSERT INTO my_table (SendDate)
+VALUES ('2021-12-25 16:59:58');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-28 10:33:03');
+INSERT INTO Parcele (SendDate)
+VALUES ('2021-12-28 10:33:03');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-28 10:33:03');
+
+INSERT INTO Parcel (SendDate)
+VALUES ('03 ธ.ค. 2022 15.33.45.22333');
+
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-10 15:35:55');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-15 10:34:33');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-20 09:30:22');
+INSERT INTO Parcel (SendDate)
+VALUES ('2021-12-28 16:59:58');
+INSERT INTO Parcel (SendDate)
+VALUES ('2022-01-02 10:33:03');
+INSERT INTO Parcel (SendDate)
+VALUES ('2022-01-02 10:33:03');
+INSERT INTO Parcel (SendDate)
+VALUES ('2022-01-02 10:33:03');
 
 
 
 
+INSERT INTO my_table (timestamp_column)
+VALUES (TO_TIMESTAMP('2022-12-05 13:30:12', 'YYYY-MM-DD HH24:MI:SS'));
+
+
+UPDATE  Parcel
+SET SendDate = '03 ธ.ค. 2022 15.33.44.22333'
+WHERE PrcCode = 'PC01';
+UPDATE  Parcel
+SET SendDate = '07 ธ.ค. 2022 16.44.45.22343'
+WHERE PrcCode = 'PC02';
+UPDATE  Parcel
+SET SendDate = '10 ธ.ค. 2022 10.53.43.12333'
+WHERE PrcCode = 'PC03';
+UPDATE  Parcel
+SET SendDate = '15 ธ.ค. 2022 13.42.23.24233'
+WHERE PrcCode = 'PC04';
+UPDATE  Parcel
+SET SendDate = '23 ธ.ค. 2022 10.34.09.22673'
+WHERE PrcCode = 'PC05';
+UPDATE  Parcel
+SET SendDate = '28 ธ.ค. 2022 09.23.39.22333'
+WHERE PrcCode = 'PC06';
+UPDATE  Parcel
+SET SendDate = '28 ธ.ค. 2022 09.23.39.22333'
+WHERE PrcCode = 'PC07';
+UPDATE  Parcel
+SET SendDate = '28 ธ.ค. 2022 09.23.39.22333'
+WHERE PrcCode = 'PC08';
 
 
 
 
+UPDATE  Parcel
+SET RevDate = '05 ธ.ค. 2022 14.33.44.22333'
+WHERE PrcCode = 'PC01';
+UPDATE  Parcel
+SET RevDate = '08 ธ.ค. 2022 15.44.45.22343'
+WHERE PrcCode = 'PC02';
+UPDATE  Parcel
+SET RevDate = '10 ธ.ค. 2022 16.53.43.12333'
+WHERE PrcCode = 'PC03';
+UPDATE  Parcel
+SET RevDate = '16 ธ.ค. 2022 11.42.23.10433'
+WHERE PrcCode = 'PC04';
+UPDATE  Parcel
+SET RevDate = '27 ธ.ค. 2022 13.34.09.22673'
+WHERE PrcCode = 'PC05';
+UPDATE  Parcel
+SET RevDate = '02 ม.ค. 2023 10.23.39.22333'
+WHERE PrcCode = 'PC06';
+UPDATE  Parcel
+SET RevDate = '03 ม.ค. 2023 12.55.39.22333'
+WHERE PrcCode = 'PC07';
+UPDATE  Parcel
+SET RevDate = '02 ม.ค. 2023 11.13.39.22333'
+WHERE PrcCode = 'PC08';
+
+
+UPDATE  WorkProcess
+SET EndTime = '03 ธ.ค. 2022 15.34.44.22333'
+WHERE Sequence = 'WP01';
+UPDATE  WorkProcess
+SET EndTime = '03 ธ.ค. 2022 16.55.44.22333'
+WHERE Sequence = 'WP02';
+UPDATE  WorkProcess
+SET EndTime = '05 ธ.ค. 2022 14.33.44.22333'
+WHERE Sequence = 'WP03';
+UPDATE  WorkProcess
+SET EndTime = '07 ธ.ค. 2022 16.46.45.22343'
+WHERE Sequence = 'WP04';
+UPDATE  WorkProcess
+SET EndTime = '07 ธ.ค. 2022 16.59.45.22343'
+WHERE Sequence = 'WP05';
+UPDATE  WorkProcess
+SET EndTime = '08 ธ.ค. 2022 15.44.45.22343'
+WHERE Sequence = 'WP06';
+UPDATE  WorkProcess
+SET EndTime = '10 ธ.ค. 2022 10.56.43.12333'
+WHERE Sequence = 'WP07';
+UPDATE  WorkProcess
+SET  EndTime = '10 ธ.ค. 2022 16.53.43.12333'
+WHERE Sequence = 'WP08';
+UPDATE  WorkProcess
+SET  EndTime = '15 ธ.ค. 2022 13.49.53.24233'
+WHERE Sequence = 'WP09';
+UPDATE  WorkProcess
+SET EndTime = '15 ธ.ค. 2022 16.55.43.12333'
+WHERE Sequence = 'WP10';
+UPDATE  WorkProcess
+SET  EndTime = '16 ธ.ค. 2022 11.42.23.10433'
+WHERE Sequence = 'WP11';
+UPDATE  WorkProcess
+SET EndTime = '23 ธ.ค. 2022 10.40.09.22673'
+WHERE Sequence = 'WP12';
+UPDATE  WorkProcess
+SET  EndTime = '23 ธ.ค. 2022 13.45.09.22673'
+WHERE Sequence = 'WP13';
+UPDATE  WorkProcess
+SET  EndTime = '25 ธ.ค. 2022 21.34.09.22673'
+WHERE Sequence = 'WP14';
+UPDATE  WorkProcess
+SET  EndTime = '26 ธ.ค. 2022 17.21.43.12333'
+WHERE Sequence = 'WP15';
+UPDATE  WorkProcess
+SET  EndTime = '27 ธ.ค. 2022 13.34.09.22673'
+WHERE Sequence = 'WP16';
+
+UPDATE  WorkProcess
+SET StartTime = '03 ธ.ค. 2022 15.33.44.22333'
+WHERE Sequence = 'WP01';
+UPDATE  WorkProcess
+SET StartTime = '03 ธ.ค. 2022 15.50.44.22333'
+WHERE Sequence = 'WP02';
+UPDATE  WorkProcess
+SET StartTime = '05 ธ.ค. 2022 13.00.43.12333'
+WHERE Sequence = 'WP03';
+UPDATE  WorkProcess
+SET StartTime = '07 ธ.ค. 2022 16.44.45.22343'
+WHERE Sequence = 'WP04';
+UPDATE  WorkProcess
+SET StartTime = '07 ธ.ค. 2022 16.55.45.22343'
+WHERE Sequence = 'WP05';
+UPDATE  WorkProcess
+SET StartTime = '08 ธ.ค. 2022 13.00.43.12333'
+WHERE Sequence = 'WP06';
+UPDATE  WorkProcess
+SET StartTime = '10 ธ.ค. 2022 10.53.43.12333'
+WHERE Sequence = 'WP07';
+UPDATE  WorkProcess
+SET StartTime = '10 ธ.ค. 2022 13.00.43.12333'
+WHERE Sequence = 'WP08';
+UPDATE  WorkProcess
+SET StartTime = '15 ธ.ค. 2022 13.42.23.24233'
+WHERE Sequence = 'WP09';
+UPDATE  WorkProcess
+SET StartTime = '15 ธ.ค. 2022 13.53.43.12333'
+WHERE Sequence = 'WP10';
+UPDATE  WorkProcess
+SET StartTime = '16 ธ.ค. 2022 13.00.43.12333'
+WHERE Sequence = 'WP11';
+UPDATE  WorkProcess
+SET StartTime = '23 ธ.ค. 2022 10.34.09.22673'
+WHERE Sequence = 'WP12';
+UPDATE  WorkProcess
+SET StartTime = '23 ธ.ค. 2022 10.45.09.22673'
+WHERE Sequence = 'WP13';
+UPDATE  WorkProcess
+SET StartTime = '25 ธ.ค. 2022 16.34.09.22673'
+WHERE Sequence = 'WP14';
+UPDATE  WorkProcess
+SET StartTime = '26 ธ.ค. 2022 15.53.43.12333'
+WHERE Sequence = 'WP15';
+UPDATE  WorkProcess
+SET StartTime = '27 ธ.ค. 2022 13.00.43.12333'
+WHERE Sequence = 'WP16';
 
